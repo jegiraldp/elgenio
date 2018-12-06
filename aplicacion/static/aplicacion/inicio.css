@@ -1,0 +1,28 @@
+body {
+background-color: #ddffff
+}
+
+a{
+font-size:24px;
+color:#100;
+}
+
+h2{
+color:darkblue
+}
+
+a:hover{
+font-size:25px;
+background-color: #ddffff;
+color:darkblue;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #fefeb9;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: darkblue;
+    width:96%
+}

@@ -1,0 +1,17 @@
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'aplicacion/inicio.css' %}">
+<title>Extintores EL GENIO</title>
+</head>
+<body>
+
+<div>
+<h2>{{info}}</h2>
+<img src="{% static 'aplicacion/img/clientes.png' %}"/>
+    <a href="clientes/listar">Clientes</a><br/><br/>
+    <img src="{% static 'aplicacion/img/lock.png' %}"/>
+<a href="../admin/aplicacion" target="_blank">Admin</a>
+</div>
+</body>
+</html>
