@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+<head><link rel="stylesheet" type="text/css" href="{% static 'aplicacion/css/tablas.css' %}">
+</head>
+    <meta charset="UTF-8">
+    <title>Listado de clientes</title>
+</head>
+<body><a href="/aplicacion">
+<img src="{% static 'aplicacion/img/back.png' %}"/>
+ Regresar </a>
+<hr/>
+<div>
+<p>Listado de clientes</p>
+{% if clientes %}
+    <table id="clientes">
+        <tr>
+            <th>NOMBRE</th>
+            <th>DIRECCIÓN</th>
+            <th>TELÉFONO</th>
+            <th>DESCRIPCIÓN</th>
+        </tr>
+    {% for p in clientes %}
+        <tr>
+            <td>{{p.nombreE}}</td>
+            <td>{{p.direccionE}}</td>
+            <td>{{p.telefonoE}}</td>
+            <td>{{p.descripcionE}}</td></tr>
+    {% endfor %}
+    </table>
+{% else %}
+    <p>Error de programación</p>
+{% endif %}
+</div>
+</body>
+</html>

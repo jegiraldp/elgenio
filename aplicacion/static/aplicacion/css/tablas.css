@@ -1,0 +1,60 @@
+#clientes {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#clientes td, #clientes th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#clientes tr {background-color: white;}
+
+
+#clientes tr:hover {
+
+font-style: italic;
+background-color: #ddffff;
+}
+
+#clientes th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ddd;
+    color: darkblue;
+}
+
+p{
+font-size:24px;
+color: darkblue;
+font-weight: bold;
+}
+
+hr{
+border-top: 1px solid #ddffff;
+}
+
+a{
+font-size:22px;
+}
+
+a:hover{
+font-style: italic;
+font-weight: bold;
+}
+
+body {
+background-color: #ddffff
+}
+
+div {
+    border-radius: 6px;
+    background-color: #fefeb9;
+    padding: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: darkblue;
+    width:96%
+}
