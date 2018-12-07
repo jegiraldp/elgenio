@@ -1,0 +1,34 @@
+{% load static %}
+<html>
+<head><link rel="stylesheet" type="text/css" href="{% static 'aplicacion/css/tablas.css' %}">
+</head>
+<body>
+<a href="/aplicacion">
+<img src="{% static 'aplicacion/img/back.png' %}"/>
+ Regresar </a>
+<hr/>
+<div>
+{% if servicios %}
+    <table id="servicios">
+        <tr><th class="fusion" colspan="4">SERVICIOS REALIZADOS</th></tr>
+        <tr>
+            <th>Fecha</th>
+            <th>Empresa</th>
+            <th>Detalle</th>
+            <th>Cantidad</th>
+        </tr>
+    {% for p in servicios %}
+        <tr>
+            <td>{{p.Fecha}}</td>
+            <td>{{p.Cliente}}</td>
+            <td>{{p.Servicio}}</td>
+            <td>{{p.Cantidad}}</td>
+            </tr>
+    {% endfor %}
+    </table>
+{% else %}
+    <p>Error de programación</p>
+{% endif %}
+</div>
+</body>
+</html>

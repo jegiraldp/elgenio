@@ -1,29 +1,34 @@
-#clientes {
+#clientes, #servicios{
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
 
-#clientes td, #clientes th {
+#clientes td, #clientes th, #servicios td, #servicios th {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-#clientes tr {background-color: white;}
+#clientes tr, #servicios tr {background-color: white;}
 
 
-#clientes tr:hover {
+#clientes tr:hover, #servicios tr:hover {
 
 font-style: italic;
 background-color: #ddffff;
 }
 
-#clientes th {
+#clientes th , #servicios th{
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: #ddd;
     color: darkblue;
+}
+
+#clientes .fusion, #servicios .fusion{
+background-color: white;
+text-align:center
 }
 
 p{

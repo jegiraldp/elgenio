@@ -10,9 +10,10 @@
  Regresar </a>
 <hr/>
 <div>
-<p>Listado de clientes</p>
+
 {% if clientes %}
     <table id="clientes">
+        <tr><th class="fusion" colspan="4">CLIENTES REGISTRADOS</th></tr>
         <tr>
             <th>NOMBRE</th>
             <th>DIRECCIÓN</th>
@@ -21,10 +22,10 @@
         </tr>
     {% for p in clientes %}
         <tr>
-            <td>{{p.nombreE}}</td>
-            <td>{{p.direccionE}}</td>
-            <td>{{p.telefonoE}}</td>
-            <td>{{p.descripcionE}}</td></tr>
+            <td>{{p.Nombre}}</td>
+            <td>{{p.Direccion}}</td>
+            <td>{{p.Telefono}}</td>
+            <td>{{p.Descripcion}}</td></tr>
     {% endfor %}
     </table>
 {% else %}
