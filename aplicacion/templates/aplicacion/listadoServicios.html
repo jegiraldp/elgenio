@@ -10,12 +10,13 @@
 <div>
 {% if servicios %}
     <table id="servicios">
-        <tr><th class="fusion" colspan="4">SERVICIOS REALIZADOS</th></tr>
+        <tr><th class="fusion" colspan="5">SERVICIOS REALIZADOS</th></tr>
         <tr>
             <th>Fecha</th>
             <th>Empresa</th>
             <th>Detalle</th>
             <th>Cantidad</th>
+            <th>Comentario</th>
         </tr>
     {% for p in servicios %}
         <tr>
@@ -23,6 +24,7 @@
             <td>{{p.Cliente}}</td>
             <td>{{p.Servicio}}</td>
             <td>{{p.Cantidad}}</td>
+            <td>{{p.Comentario}}</td>
             </tr>
     {% endfor %}
     </table>

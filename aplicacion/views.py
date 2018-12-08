@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import cliente, servicio
 
 def index(request):
-    ctx={'info':'-- Sistema de Información -- '}
+    ctx={'info':' -- Extintores EL GENIO -- '}
     return render (request,"aplicacion/inicio.html",ctx)
 
 def getclientes(request):
