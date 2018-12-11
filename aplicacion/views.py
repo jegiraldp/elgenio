@@ -11,6 +11,6 @@ def getclientes(request):
     return render(request, "aplicacion/listadoClientes.html", ctx)
 
 def getservicios(request):
-    lista = servicio.objects.order_by('Cliente')
+    lista = servicio.objects.order_by('Fecha')
     ctx = {'servicios': lista}
     return render(request, "aplicacion/listadoServicios.html", ctx)

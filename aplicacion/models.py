@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import datetime
 
+
 class cliente(models.Model):
     nit = models.CharField(max_length=30, null=False, blank=False, default='0')
     Nombre = models.CharField(max_length=50, null=False, blank=False)
@@ -18,9 +19,12 @@ class servicio(models.Model):
     ls=(('Venta','Venta'),('Recarga','Recarga'),('Reparación','Reparación'))
     Cantidad = models.IntegerField(null=False, blank=False)
     Servicio = models.CharField(max_length=20, choices=ls, default='01')
-    Comentario = models.CharField(max_length=100, null=True, blank=True, default='.')
+    Comentario = models.CharField(max_length=100, null=True, blank=True)
 
     def __str__(self):
         return self.Servicio+" ("+self.Cliente.Nombre+" : "+str(self.Fecha)+")"
 
-
+class remision(models.Model):
+    Fecha = models.DateField()
+    Cantidad = models.IntegerField(null=False, blank=False)
+    Comentario = models.CharField(max_length=100, null=True, blank=True)
