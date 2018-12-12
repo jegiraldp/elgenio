@@ -10,6 +10,9 @@ class clienteAdmin(admin.ModelAdmin):
     fields = ('Nombre', 'Direccion', 'Telefono','Descripcion')
     exclude = ('nit',)
     list_display = ('Nombre', 'Direccion', 'Telefono','Descripcion')
+    list_per_page = 7
+    actions = None
+    search_fields = ['Nombre',]
 
 admin.site.register(cliente,clienteAdmin)
 
@@ -25,9 +28,10 @@ class servicioAdmin(admin.ModelAdmin):
     #servicio.admin_order_field='Fecha'
     #list_display_links = ('Cliente', 'Fecha')
     list_filter = ('Servicio','Fecha')
-    list_per_page = 5
+    list_per_page = 7
     search_fields = ['Cliente__Nombre',]
     save_on_top = True
+    actions = None
 
 admin.site.register(servicio,servicioAdmin)
 ##
